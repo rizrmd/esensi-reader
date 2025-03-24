@@ -1075,7 +1075,6 @@ class Contents {
 		this.css("overflow-y", "hidden");
 		this.css("margin", "0", true);
 
-		console.log(gap)
 		if (axis === "vertical") {
 			this.css("padding-top", (gap / 2) + "px", true);
 			this.css("padding-bottom", (gap / 2) + "px", true);
