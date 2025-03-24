@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": true,
+    // Bundler mode
+    "moduleResolution": "bundler",
+    "module": "preserve",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    // Add these configurations
+    "typeRoots": [
+      "./src/lib/epubjs/types",
+      "./src/lib/epubjs/types/utils",
+      "./src/lib/epubjs/types/managers",
+      "./node_modules/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "epubjs": [
+        "./src/lib/epubjs/types",
+        "./src/lib/epubjs/src",
+
+      ],
+      "epubjs/*": [
+        "./src/lib/epubjs/types/*",
+        "./src/lib/epubjs/src/*",
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "src/lib/epubjs/types/**/*.d.ts"
+  ]
+}
